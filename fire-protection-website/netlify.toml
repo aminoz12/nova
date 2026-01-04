@@ -20,7 +20,15 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+# Custom 404 page
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 200
+
+# Catch-all for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
