@@ -1,34 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "18"
-
-# Next.js serverless functions
-[functions]
-  directory = ".next/server"
-
-# Handle Next.js routing
-[[redirects]]
-  from = "/_next/static/*"
-  to = "/_next/static/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-# Custom 404 page
-[[redirects]]
-  from = "/404"
-  to = "/404.html"
-  status = 200
-
-# Catch-all for client-side routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
