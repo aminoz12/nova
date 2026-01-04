@@ -5,73 +5,8 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Next.js static export redirects
-[[redirects]]
-  from = "/a-propos"
-  to = "/a-propos/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/baes"
-  to = "/baes/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/desenfumage"
-  to = "/desenfumage/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/devis"
-  to = "/devis/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/epreuve"
-  to = "/epreuve/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/equipements"
-  to = "/equipements/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/extincteurs"
-  to = "/extincteurs/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/maintenance"
-  to = "/maintenance/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/plans"
-  to = "/plans/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/recharge"
-  to = "/recharge/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/ria"
-  to = "/ria/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/services"
-  to = "/services/index.html"
-  status = 200
-
+# Simple catch-all for Next.js static
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 404
+  status = 200
