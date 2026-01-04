@@ -4,9 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-
-# Simple catch-all for Next.js static
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
