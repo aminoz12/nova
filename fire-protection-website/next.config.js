@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
   images: {
-    unoptimized: true
-  }
+    domains: ['localhost'], // Add domains for any external images if needed
+    unoptimized: true // This allows local images to work without optimization
+  },
+  // Remove output: 'export' for Vercel deployment
+  // Vercel handles the build process automatically
 }
 
 module.exports = nextConfig
