@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && echo 'BUILD COMPLETED' && ls -la out/"
   publish = "out"
 
 [build.environment]
