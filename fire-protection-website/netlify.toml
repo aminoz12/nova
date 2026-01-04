@@ -1,15 +1,26 @@
 [build]
-  base = "fire-protection-website/"
   command = "npm run build"
   publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
 
+# Handle Next.js serverless functions
+[functions]
+  directory = ".next/server"
+
+# Redirects for Next.js
+[[redirects]]
+  from = "/_next/static/*"
+  to = "/_next/static/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[functions]
-  directory = ".next/server"
