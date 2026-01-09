@@ -31,14 +31,14 @@ export default function NotFound() {
                   href="tel:08007313630" 
                   className="text-red-600 hover:text-red-800 font-medium underline"
                 >
-                  0800 731 3630
+                  06 07 11 78 38
                 </a>{' '}
                 or{' '}
                 <a 
-                  href="mailto:helpdesk@novasafety.com" 
+                  href="mailto:contact@nova-ssi.fr" 
                   className="text-red-600 hover:text-red-800 font-medium underline"
                 >
-                  helpdesk@novasafety.com
+                  contact@nova-ssi.fr
                 </a>
               </p>
             </div>

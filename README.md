@@ -121,7 +121,7 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 
-For any questions or support, please reach out through the contact form on the website or email us at helpdesk@novasafety.com.
+For any questions or support, please reach out through the contact form on the website or email us at contact@nova-ssi.fr.
 
 ---
 

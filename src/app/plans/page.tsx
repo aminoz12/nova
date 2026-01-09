@@ -29,7 +29,7 @@ export default function PlansService() {
               </div>
               
               <div className="p-8 md:p-10">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">PLANS</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Plans de secours</h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Élaboration de plans de sécurité incendie pour la conformité réglementaire
                 </p>
@@ -38,36 +38,22 @@ export default function PlansService() {
                   <div className="border-l-4 border-blue-600 pl-6 py-2">
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">Description Complète</h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Nous élaborons des plans de sécurité incendie complets pour garantir la conformité réglementaire de vos établissements. 
-                      Nos plans incluent les plans d'évacuation, les plans de désenfumage, l'implantation des équipements de sécurité 
-                      et les schémas de detection, conformes aux normes ERP/IGH et à la réglementation incendie.
+                     Nous élaborons des plans de secours complets pour garantir la conformité réglementaire de vos établissements. Nos plans incluent les plans d’intervention et les plans d’évacuation avec l’implantation des équipements de protection incendie, conforme aux normes ERP et à la réglementation incendie.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-green-600 pl-6 py-2">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Types de Plans</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Types de Plans de secours</h3>
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Plans d'évacuation et de cheminement</span>
+                        <span>Plan d’intervention</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Plans d'implantation des équipements</span>
+                        <span>Plan d’évacuation</span>
                       </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Plans de désenfumage naturel et mécanique</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Schémas de détection et alarme incendie</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-indigo-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Plans de compartimentage et distribution</span>
-                      </li>
-                    </ul>
+                     </ul>
                   </div>
 
                   <div className="border-l-4 border-orange-600 pl-6 py-2">
@@ -87,11 +73,11 @@ export default function PlansService() {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Validation par les services compétents</span>
+                        <span>Validation</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Livraison des plans format numérique et papier</span>
+                        <span>Livraison et installation</span>
                       </li>
                     </ul>
                   </div>
@@ -134,11 +120,7 @@ export default function PlansService() {
                   <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
                     <FileTextIcon className="w-7 h-7 text-orange-600" />
                   </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Validation Officielle</h4>
-                    <p className="text-gray-600">Plans acceptés par commissions</p>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -170,10 +152,10 @@ export default function PlansService() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
-                    <span className="text-sm">0800 731 3630</span>
+                    <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
-                  <p className="text-sm">Email: contact@novasafety.fr</p>
+                  <p className="text-sm">Email: contact@nova-ssi.fr</p>
                 </div>
               </div>
             </div>

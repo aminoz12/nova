@@ -86,7 +86,7 @@ export default function Services() {
           <h2 className="text-3xl font-bold mb-4">NE RETARDEZ PAS APPELEZ-NOUS AUJOURD'HUI</h2>
           <a href="tel:08007313630" className="text-4xl font-bold hover:text-red-200 transition-colors inline-flex items-center gap-3">
             <Phone className="w-8 h-8" />
-            0800 731 3630
+            06 07 11 78 38
           </a>
           <p className="mt-6 text-xl">Services experts de protection incendie quand vous en avez le plus besoin</p>
         </div>

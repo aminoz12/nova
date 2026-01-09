@@ -37,15 +37,14 @@ export default function Hero() {
               <div className="w-full">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white leading-tight mb-6 sm:mb-8 tracking-tight">
                   <span className="block mb-1">VOTRE SÉCURITÉ.</span>
-                  <span className="block mb-1">VOS NORMES.</span>
-                  <span className="block bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">NOTRE MÉTIER.</span>
+                  <span className="block bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">NOTRE PRIORITÉ.</span>
                 </h1>
                 
                 {/* Enhanced call-to-action buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-                  <a href="tel:08007313630" className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
+                  <a href="tel:0607117838" className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
                     <Phone className="w-5 h-5 flex-shrink-0" />
-                    <span className="text-sm sm:text-base">Appeler 0800 731 3630</span>
+                    <span className="text-sm sm:text-base">Appeler 06 07 11 78 38</span>
                   </a>
                   <a href="/devis" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-center">
                     <span className="text-sm sm:text-base">Devis Gratuit</span>
@@ -59,7 +58,7 @@ export default function Hero() {
                       <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-white text-xs sm:text-sm mb-1">Certifié BAFE</h3>
+                      <h3 className="font-bold text-white text-xs sm:text-sm mb-1">conformité et sécurité</h3>
                       <p className="text-xs text-white/90 hidden sm:block">UKAS & ISO 9001</p>
                       <p className="text-xs text-white/90 sm:hidden">Certifié</p>
                     </div>
@@ -69,7 +68,7 @@ export default function Hero() {
                       <AlertTriangle className="w-5 h-5 sm:w-6 sm:h-6 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-white text-xs sm:text-sm mb-1">75+ Ans</h3>
+                      <h3 className="font-bold text-white text-xs sm:text-sm mb-1">+12 Ans</h3>
                       <p className="text-xs text-white/90 hidden sm:block">Dans le Secteur</p>
                       <p className="text-xs text-white/90 sm:hidden">Expérience</p>
                     </div>

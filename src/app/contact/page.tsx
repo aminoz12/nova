@@ -73,14 +73,14 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Téléphone</h3>
                   <p className="text-gray-600 mb-4">Appelez-nous maintenant</p>
-                  <p className="text-xl font-bold text-blue-600">0800 731 3630</p>
+                  <p className="text-xl font-bold text-blue-600">06 07 11 78 38</p>
                   <p className="text-sm text-red-600 font-semibold mt-2">24/7 pour les urgences</p>
                 </div>
               </a>
 
               {/* Email */}
               <a 
-                href="mailto:helpdesk@novasafety.com" 
+                href="mailto:contact@nova-ssi.fr" 
                 className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border-2 border-transparent hover:border-red-500 overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Email</h3>
                   <p className="text-gray-600 mb-4">Envoyez-nous un message</p>
-                  <p className="text-lg font-bold text-red-600 break-all">helpdesk@novasafety.com</p>
+                  <p className="text-lg font-bold text-red-600 break-all">contact@nova-ssi.fr</p>
                 </div>
               </a>
             </div>
@@ -176,13 +176,13 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-3 border-b border-gray-100">
                       <div>
-                        <p className="font-semibold text-gray-900">Lundi - Vendredi</p>
+                        <p className="font-semibold text-gray-900">Lundi - Samedi</p>
                       </div>
-                      <p className="text-gray-600 font-medium">8:00 - 17:00</p>
+                      <p className="text-gray-600 font-medium">8h - 18h</p>
                     </div>
                     <div className="flex justify-between items-center pb-3 border-b border-gray-100">
                       <div>
-                        <p className="font-semibold text-gray-900">Samedi - Dimanche</p>
+                        <p className="font-semibold text-gray-900">Dimanche</p>
                       </div>
                       <p className="text-gray-600 font-medium">Fermé</p>
                     </div>

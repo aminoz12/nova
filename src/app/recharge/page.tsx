@@ -49,19 +49,15 @@ export default function RechargeService() {
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge extincteurs à poudre ABC</span>
+                        <span>Recharge extincteur à poudre</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge extincteurs à eau pulvérisée</span>
+                        <span>Recharge extincteur à eau pulvérisé + additif</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge extincteurs à CO2</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge extincteurs à mousse</span>
+                        <span>Échange standard extincteur CO2</span>
                       </li>
                     </ul>
                   </div>
@@ -166,7 +162,7 @@ export default function RechargeService() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
-                    <span className="text-sm">0800 731 3630</span>
+                    <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
                   <p className="text-sm">Email: contact@novasafety.fr</p>

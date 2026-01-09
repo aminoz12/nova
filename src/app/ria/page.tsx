@@ -123,7 +123,7 @@ export default function RiaService() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Maintenance Garantie</h4>
-                    <p className="text-gray-600">Contrats de maintenance préventive</p>
+                    <p className="text-gray-600">Contrat de maintenance annuelle et préventive. préventive</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-purple-50 transition-colors">
@@ -166,7 +166,7 @@ export default function RiaService() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
-                    <span className="text-sm">0800 731 3630</span>
+                    <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
                   <p className="text-sm">Email: contact@novasafety.fr</p>

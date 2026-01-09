@@ -9,52 +9,52 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What fire protection services do you offer?",
-      answer: "We offer comprehensive fire protection services including fire risk assessments, fire alarm installation and maintenance, fire extinguisher supply and servicing, emergency lighting (BAES), smoke extraction systems (Désenfumage), fire hydrants (RIA), and fire safety training. All our services comply with UK and European standards."
+      question: "Quels services de protection incendie proposez-vous ?",
+      answer: "Nous proposons des services complets de protection incendie incluant l'évaluation des risques incendie, la conception et installation d'alarmes incendie, la maintenance d'alarmes, la fourniture d'extincteurs, l'éclairage de secours (BAES), le désenfumage, les RIA, et la formation incendie. Tous nos services sont conformes aux normes ERP et à la réglementation incendie."
     },
     {
-      question: "Are your technicians certified and qualified?",
-      answer: "Yes, all our technicians are fully certified and qualified. We are BAFE certified, NSI Gold accredited, UKAS approved, and ISO 9001 certified. Our team undergoes regular training to stay updated with the latest regulations and technologies."
+      question: "Vos techniciens sont-ils certifiés et qualifiés ?",
+      answer: "Oui, tous nos techniciens sont entièrement certifiés et qualifiés. Nous sommes certifiés BAFE, accrédités NSI Gold, approuvés UKAS et certifiés ISO 9001. Notre équipe suit des formations régulières pour rester à jour avec les dernières réglementations et technologies."
     },
     {
-      question: "How quickly can you respond to emergency callouts?",
-      answer: "We offer 24/7 emergency support and can typically respond to urgent callouts within 2-4 hours depending on your location. For critical situations, we prioritize immediate response to ensure your safety and compliance."
+      question: "Quelle est votre rapidité d'intervention en cas d'urgence ?",
+      answer: "Nous offrons un support d'urgence 24/7 et pouvons généralement intervenir sur les appels d'urgence dans un délai de 2-4 heures selon votre localisation. Pour les situations critiques, nous priorisons une intervention immédiate pour assurer votre sécurité et votre conformité."
     },
     {
-      question: "What is included in a fire risk assessment?",
-      answer: "Our fire risk assessments include a comprehensive evaluation of your premises, identification of fire hazards, assessment of existing fire safety measures, evaluation of evacuation procedures, and a detailed report with recommendations for compliance. The assessment follows the Regulatory Reform (Fire Safety) Order 2005."
+      question: "Qu'est-ce qui est inclus dans une évaluation des risques incendie ?",
+      answer: "Nos évaluations des risques incendie incluent une évaluation complète de vos locaux, l'identification des dangers d'incendie, l'évaluation des mesures de sécurité incendie existantes, l'évaluation des procédures d'évacuation, et un rapport détaillé avec des recommandations pour la conformité. L'évaluation suit les normes ERP et la réglementation incendie."
     },
     {
-      question: "How often should fire extinguishers be serviced?",
-      answer: "Fire extinguishers should be serviced annually by a qualified engineer. Additionally, they require a basic service check every month (which can be done in-house) and an extended service every 5 years. We offer maintenance contracts to ensure your extinguishers are always in compliance."
+      question: "À quelle fréquence les extincteurs doivent-ils être entretenus ?",
+      answer: "Les extincteurs doivent être entretenus annuellement par un ingénieur qualifié. De plus, ils nécessitent une vérification de service mensuelle (qui peut être faite en interne) et une service étendu tous les 5 ans. Nous proposons des contrats de maintenance pour garantir que vos extincteurs sont toujours conformes."
     },
     {
-      question: "Do you provide fire safety training?",
-      answer: "Yes, we provide comprehensive fire safety training including hands-on fire extinguisher training, evacuation procedures, fire warden training, and online courses. Training can be conducted on-site at your premises or at our training facility."
+      question: "Proposez-vous des formations de sécurité incendie ?",
+      answer: "Oui, nous proposons des formations complètes de sécurité incendie incluant la formation pratique sur extincteurs, les procédures d'évacuation, la formation de gardien incendie, et des cours en ligne. La formation peut être effectuée sur place dans vos locaux ou dans notre centre de formation."
     },
     {
-      question: "What is the difference between BAES and emergency lighting?",
-      answer: "BAES (Blocs Autonomes d'Éclairage de Sécurité) are self-contained emergency lighting units with their own battery backup. Emergency lighting can refer to both BAES units and central battery systems. BAES units are ideal for smaller installations, while central systems are better for larger buildings."
+      question: "Quelle est la différence entre BAES et éclairage de secours ?",
+      answer: "Les BAES (Blocs Autonomes d'Éclairage de Sécurité) sont des unités d'éclairage de secours autonomes avec leur propre batterie de secours. L'éclairage de secours peut désigner à la fois les unités BAES et les systèmes à batterie centrale. Les unités BAES sont idéales pour les petites installations, tandis que les systèmes centraux conviennent mieux aux grands bâtiments."
     },
     {
-      question: "How much does a fire alarm system cost?",
-      answer: "The cost of a fire alarm system varies depending on the size of your premises, the type of system required (conventional or addressable), and specific requirements. We provide free, no-obligation quotes tailored to your needs. Contact us for a detailed estimate."
+      question: "Combien coûte un système d'alarme incendie ?",
+      answer: "Le coût d'un système d'alarme incendie varie selon la taille de vos locaux, le type de système requis (conventionnel ou adressable) et les exigences spécifiques. Nous fournissons des devis gratuits et sans engagement adaptés à vos besoins. Contactez-nous pour une estimation détaillée."
     },
     {
-      question: "What maintenance is required for fire alarm systems?",
-      answer: "Fire alarm systems require weekly testing (which you can do in-house), quarterly servicing by a qualified engineer, and annual comprehensive inspections. We offer maintenance contracts that include all required servicing, testing, and certification to ensure full compliance with BS 5839 standards."
+      question: "Quelle maintenance est requise pour les systèmes d'alarme incendie ?",
+      answer: "Les systèmes d'alarme incendie nécessitent des tests hebdomadaires (que vous pouvez faire en interne), un service trimestriel par un ingénieur qualifié, et des inspections annuelles complètes. Nous proposons des contrats de maintenance incluant tous les services, tests et certifications requis pour assurer une conformité totale avec les normes."
     },
     {
-      question: "Can you help with fire safety compliance?",
-      answer: "Absolutely. We provide complete fire safety compliance services including risk assessments, installation of compliant systems, regular maintenance, staff training, and documentation. Our team ensures your premises meet all current fire safety regulations and standards."
+      question: "Pouvez-vous aider à la conformité de sécurité incendie ?",
+      answer: "Absolument. Nous fournissons des services complets de conformité de sécurité incendie incluant les évaluations de risques, l'installation de systèmes conformes, la maintenance régulière, la formation du personnel et la documentation. Notre équipe garantit que vos locaux respectent toutes les réglementations et normes de sécurité incendie actuelles."
     },
     {
-      question: "Do you work with commercial and residential properties?",
-      answer: "Yes, we work with a wide range of properties including commercial buildings, residential properties, industrial facilities, educational institutions, healthcare facilities, and hospitality venues. Our services are tailored to meet the specific requirements of each property type."
+      question: "Travaillez-vous avec des propriétés commerciales et résidentielles ?",
+      answer: "Oui, nous travaillons avec une large gamme de propriétés incluant les bâtiments commerciaux, les propriétés résidentielles, les installations industrielles, les établissements d'enseignement, les établissements de santé, et les lieux d'hébergement et de loisirs. Nos services sont adaptés pour répondre aux exigences spécifiques de chaque type de propriété."
     },
     {
-      question: "What areas do you cover?",
-      answer: "We provide fire protection services across the UK, with our main operations based in Preston, Lancashire. We have teams strategically located to serve clients nationwide. Contact us to confirm coverage in your specific area and discuss your requirements."
+      question: "Quelles zones couvrez-vous ?",
+      answer: "Nous fournissons des services de protection incendie dans toute la région Île-de-France et Paris, avec nos opérations principales basées à Paris. Nous avons des équipes stratégiquement positionnées pour servir les clients dans toute la région. Contactez-nous pour confirmer la couverture dans votre zone spécifique et discuter de vos exigences."
     }
   ]
 
@@ -73,9 +73,9 @@ export default function FAQ() {
     <section id="faq" className="py-16 sm:py-20 bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Questions Fréquemment Posées</h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Find answers to common questions about our fire protection services
+            Trouvez des réponses aux questions courantes sur nos services de protection incendie
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export default function FAQ() {
                 onClick={() => setVisibleCount(visibleCount + 4)}
                 className="bg-red-600 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/50"
               >
-                Show More Questions
+                Voir Plus de Questions
               </button>
             </div>
           )}

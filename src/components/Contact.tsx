@@ -1,24 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
 
 export default function Contact() {
-  const recentNews = [
-    {
-      title: "Exigences d'Installation d'Alarme Incendie",
-      link: "#"
-    },
-    {
-      title: "Guide de Maintenance d'Alarme", 
-      link: "#"
-    },
-    {
-      title: "BS 5839-1 : 2025 — Mises à Jour Clés",
-      link: "#"
-    },
-    {
-      title: "Maintenance d'Alarme Incendie",
-      link: "#"
-    }
-  ]
 
   return (
     <section id="contact" className="py-16 sm:py-20 bg-white">
@@ -128,24 +110,12 @@ export default function Contact() {
               <h3 className="text-2xl font-bold mb-6">Informations de Contact</h3>
               
               <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Siège Social</h4>
-                    <p className="text-red-100">
-                      Walker Fire (Siège Social)<br />
-                      Unité 81 Roman Way Industrial Estate<br />
-                      Preston, Lancashire, PR2 5BB
-                    </p>
-                  </div>
-                </div>
-
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Téléphone</h4>
-                    <a href="tel:08007313630" className="text-xl font-bold hover:text-red-200 transition-colors">
-                      0800 731 3630
+                    <a href="tel:0607117838" className="text-xl font-bold hover:text-red-200 transition-colors">
+                      06 07 11 78 38
                     </a>
                   </div>
                 </div>
@@ -154,8 +124,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <a href="mailto:helpdesk@novasafety.com" className="hover:text-red-200 transition-colors">
-                      helpdesk@novasafety.com
+                    <a href="mailto:contact@nova-ssi.fr" className="hover:text-red-200 transition-colors">
+                      contact@nova-ssi.fr
                     </a>
                   </div>
                 </div>
@@ -165,33 +135,17 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold mb-1">Heures d'Ouverture</h4>
                     <p className="text-red-100">
-                      Lundi - Vendredi : 8:00 - 17:00<br />
-                      Samedi - Dimanche : Fermé
+                      Lundi - Samedi : 8h - 18h<br />
+                      Dimanche : Fermé<br />
+                      Jour férié ouvert
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Recent News */}
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Actualités Récentes</h3>
-              <div className="space-y-4">
-                {recentNews.map((news, index) => (
-                  <a key={index} href={news.link} className="block hover:text-red-600 transition-colors">
-                    <h4 className="font-semibold text-gray-900 hover:text-red-600">
-                      {news.title}
-                    </h4>
-                  </a>
-                ))}
-              </div>
-              <a href="#" className="inline-block mt-6 text-red-600 font-semibold hover:text-red-700">
-                Voir toutes les actualités →
-              </a>
-            </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   )
 }

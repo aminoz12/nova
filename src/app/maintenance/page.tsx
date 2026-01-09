@@ -57,13 +57,9 @@ export default function MaintenanceService() {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Contrats de maintenance annuelle</span>
+                        <span>Contrat de maintenance annuelle et préventive. annuelle</span>
                       </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Inspections réglementaires périodiques</span>
-                      </li>
-                    </ul>
+                      </ul>
                   </div>
 
                   <div className="border-l-4 border-orange-600 pl-6 py-2">
@@ -71,23 +67,27 @@ export default function MaintenanceService() {
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Audit initial des équipements</span>
+                        <span>Audit initial des équipements.</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Établissement du planning de maintenance</span>
+                        <span>Établissement du planning de maintenance.</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Interventions programmées</span>
+                        <span>Interventions programmées.</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Rapports détaillés après chaque visite</span>
+                        <span>Gestion des pièces de rechange.</span>
+                      </li> 
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
+                        <span>Rapports détaillés après chaque visite.</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Gestion des pièces de rechange</span>
+                        <span>Registre de sécurité mis à jours.</span>
                       </li>
                     </ul>
                   </div>
@@ -166,7 +166,7 @@ export default function MaintenanceService() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
-                    <span className="text-sm">0800 731 3630</span>
+                    <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
                   <p className="text-sm">Email: contact@novasafety.fr</p>

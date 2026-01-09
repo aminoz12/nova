@@ -49,23 +49,31 @@ export default function EquipementsService() {
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs portatifs et sur roulettes</span>
+                        <span>Extincteurs portatif et sur roues</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Systèmes d'alarme incendie</span>
+                        <span>Éclairage de secours BAES</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Éclairage de secours et balisage</span>
+                        <span>Alarme type 4</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Détecteurs de fumée et de chaleur</span>
+                        <span>Désenfumage</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Robinets d'incendie armés (RIA)</span>
+                        <span>RIA</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
+                        <span>Porte coupe feu</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
+                        <span>Colonne sèche</span>
                       </li>
                     </ul>
                   </div>
@@ -170,7 +178,7 @@ export default function EquipementsService() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
-                    <span className="text-sm">0800 731 3630</span>
+                    <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
                   <p className="text-sm">Email: contact@novasafety.fr</p>

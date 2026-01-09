@@ -15,8 +15,7 @@ export default function DevisPage() {
     address: '',
     service: '',
     projectDescription: '',
-    urgency: '',
-    budget: ''
+    urgency: ''
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -197,7 +196,7 @@ export default function DevisPage() {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
-                        placeholder="0800 731 3630"
+                        placeholder="06 07 11 78 38"
                       />
                     </div>
                   </div>
@@ -250,27 +249,9 @@ export default function DevisPage() {
                           className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
                         >
                           <option value="">Sélectionnez</option>
-                          <option value="urgent">Urgent (sous 1 semaine)</option>
-                          <option value="normal">Normal (1-2 semaines)</option>
-                          <option value="flexible">Flexible (plus de 2 semaines)</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Budget Estimé
-                        </label>
-                        <select 
-                          name="budget"
-                          value={formData.budget}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
-                        >
-                          <option value="">Sélectionnez</option>
-                          <option value="under-5k">Moins de 5 000€</option>
-                          <option value="5k-10k">5 000€ - 10 000€</option>
-                          <option value="10k-25k">10 000€ - 25 000€</option>
-                          <option value="25k-50k">25 000€ - 50 000€</option>
-                          <option value="over-50k">Plus de 50 000€</option>
+                          <option value="urgent">Urgent sous 48h</option>
+                          <option value="normal">Normal 1 semaine</option>
+                          <option value="flexible">Flexible +1 semaine</option>
                         </select>
                       </div>
                     </div>
@@ -305,14 +286,14 @@ export default function DevisPage() {
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all"
                 >
                   <Phone className="w-5 h-5" />
-                  0800 731 3630
+                  06 07 11 78 38
                 </a>
                 <a 
-                  href="mailto:helpdesk@novasafety.com" 
+                  href="mailto:contact@nova-ssi.fr" 
                   className="inline-flex items-center justify-center gap-2 bg-gray-200 text-gray-900 px-6 py-3 rounded-xl font-semibold hover:bg-gray-300 transition-all"
                 >
                   <Mail className="w-5 h-5" />
-                  helpdesk@novasafety.com
+                  contact@nova-ssi.fr
                 </a>
               </div>
             </div>

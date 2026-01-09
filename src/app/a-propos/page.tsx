@@ -33,7 +33,7 @@ export default function AboutPage() {
   ]
 
   const stats = [
-    { number: "75+", label: "Années d'Expérience", icon: <TrendingUp className="w-6 h-6" /> },
+    { number: "+12", label: "Années d'Expérience", icon: <TrendingUp className="w-6 h-6" /> },
     { number: "10,000+", label: "Clients Satisfaits", icon: <Users className="w-6 h-6" /> },
     { number: "50+", label: "Techniciens Certifiés", icon: <Award className="w-6 h-6" /> },
     { number: "24/7", label: "Support Disponible", icon: <Clock className="w-6 h-6" /> }
@@ -115,7 +115,7 @@ export default function AboutPage() {
                   sans relâche pour garantir votre sécurité et votre conformité.
                 </p>
                 <p>
-                  Chez Nova Safety, nous croyons que la sécurité ne devrait jamais être un compromis. C'est pourquoi 
+                  Chez Nova SSI , nous croyons que la sécurité ne devrait jamais être un compromis. C'est pourquoi 
                   nous nous engageons à fournir des solutions de la plus haute qualité, certifiées et conformes aux 
                   normes les plus strictes de l'industrie.
                 </p>
