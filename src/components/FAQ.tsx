@@ -88,9 +88,11 @@ export default function FAQ() {
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3 sm:gap-4 pr-4">
-                    <div className="bg-red-100 p-2 sm:p-3 rounded-lg">
-                      <HelpCircle className="w-4 h-4 sm:w-6 sm:h-6 text-red-600" />
-                    </div>
+                    <img 
+                      src="/logo.png" 
+                      alt="Nova Safety" 
+                      className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+                    />
                     <h3 className="font-semibold text-gray-900 text-sm sm:text-base lg:text-lg leading-tight">
                       {faq.question}
                     </h3>
