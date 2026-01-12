@@ -75,7 +75,7 @@ export default function ImageServices() {
   }
 
   return (
-    <section className="bg-gray-50 py-8 sm:py-12 md:py-16 lg:py-20">
+    <section id="services" className="bg-gray-50 py-8 sm:py-12 md:py-16 lg:py-20">
       <div className="container-custom">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-blue-900 mb-6 sm:mb-8 leading-tight px-4 uppercase">

@@ -80,11 +80,11 @@ export default function Header() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3 text-sm">Protection Incendie</h4>
                     <ul className="space-y-2">
-                      <li><a href="/equipements" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Évaluation des Risques Incendie</a></li>
-                      <li><a href="/equipements" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Maintenance</a></li>
-                      <li><a href="/equipements" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Intervention Rapide en Cas d'Urgence</a></li>
-                      <li><a href="/equipements" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Installation Matériaux de Protection Incendie</a></li>
-                      <li><a href="/equipements" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Formation Utilisation Extincteur</a></li>
+                      <li><a href="/#services" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Évaluation des Risques Incendie</a></li>
+                      <li><a href="/#services" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Maintenance</a></li>
+                      <li><a href="/#services" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Intervention Rapide en Cas d'Urgence</a></li>
+                      <li><a href="/#services" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Installation Matériaux de Protection Incendie</a></li>
+                      <li><a href="/#services" className="text-sm text-gray-600 hover:text-red-600 transition-colors block">Formation Utilisation Extincteur</a></li>
                     </ul>
                   </div>
                 </div>
@@ -128,11 +128,11 @@ export default function Header() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2 text-xs uppercase tracking-wide">Protection Incendie</h4>
                       <div className="space-y-1">
-                        <a href="/equipements" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Évaluation des Risques Incendie</a>
-                        <a href="/equipements" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Maintenance</a>
-                        <a href="/equipements" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Intervention Rapide en Cas d'Urgence</a>
-                        <a href="/equipements" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Installation Matériaux de Protection Incendie</a>
-                        <a href="/equipements" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Formation Utilisation Extincteur</a>
+                        <a href="/#services" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Évaluation des Risques Incendie</a>
+                        <a href="/#services" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Maintenance</a>
+                        <a href="/#services" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Intervention Rapide en Cas d'Urgence</a>
+                        <a href="/#services" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Installation Matériaux de Protection Incendie</a>
+                        <a href="/#services" className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-white rounded transition-colors">Formation Utilisation Extincteur</a>
                       </div>
                     </div>
                   </div>
