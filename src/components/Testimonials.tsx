@@ -37,7 +37,7 @@ export default function Testimonials() {
     },
     {
       name: "Long-term Client",
-      text: "Je fais affaire avec Nova SSI  depuis environ 3 ans et en toute honnêteté, je ne peux rien leur reprocher. Leur réponse a toujours été rapide et l'entretien de très haute qualité.",
+      text: "Je fais affaire avec Nova SSI  depuis environ 1 an et en toute honnêteté, je ne peux rien leur reprocher. Leur réponse a toujours été rapide et l'entretien de très haute qualité.",
       rating: 5,
       company: "Client Fidèle"
     },
@@ -55,7 +55,7 @@ export default function Testimonials() {
     },
     {
       name: "University Contract Manager",
-      text: "Nova SSI  fournit un service excellent sur notre contrat depuis 2015. Le contrat couvre des sites éducatifs et corporatifs avec un service fiable et professionnel.",
+      text: "Nova SSI  fournit un service excellent sur notre contrat depuis 2024. Le contrat couvre des sites éducatifs et corporatifs avec un service fiable et professionnel.",
       rating: 5,
       company: "Établissement Éducatif"
     }

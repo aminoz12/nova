@@ -41,7 +41,7 @@ export default function Accreditations() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Agréments et Adhésions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nova Safety est un nom en qui vous pouvez avoir confiance, soutenu par des agréments et adhésions de pointe de l'industrie.
+              Nova SSI est un nom en qui vous pouvez avoir confiance, soutenu par des agréments et adhésions de pointe de l'industrie.
               Ces certifications reflètent Notre dévouement à fournir des services de sécurité incendie et de sécurité fiables, conformes et de pointe de l'industrie.
             </p>
           </div>

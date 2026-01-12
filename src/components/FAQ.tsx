@@ -10,13 +10,9 @@ export default function FAQ() {
   const faqs = [
     {
       question: "Quels services de protection incendie proposez-vous ?",
-      answer: "Nous proposons des services complets de protection incendie incluant l'évaluation des risques incendie, la conception et installation d'alarmes incendie, la maintenance d'alarmes, la fourniture d'extincteurs, l'éclairage de secours (BAES), le désenfumage, les RIA, et la formation incendie. Tous nos services sont conformes aux normes ERP et à la réglementation incendie."
+      answer: "Tous nos services sont conformes aux normes ERP et à la réglementation incendie.= nous proposons des services complets de sécurité incendie, la maintenance et l’installation de vos extincteurs, BAES, alarme type 4, desenfumage, RIA, plans de secours (intervention et évacuation), et la formation à l’utilisation des extincteurs. Tous nos services sont conformes au ERP et à la réglementation incendie. Tous nos services sont conformes aux normes ERP et à la réglementation incendie."
     },
-    {
-      question: "Vos techniciens sont-ils certifiés et qualifiés ?",
-      answer: "Oui, tous nos techniciens sont entièrement certifiés et qualifiés. Nous sommes certifiés BAFE, accrédités NSI Gold, approuvés UKAS et certifiés ISO 9001. Notre équipe suit des formations régulières pour rester à jour avec les dernières réglementations et technologies."
-    },
-    {
+        {
       question: "Quelle est votre rapidité d'intervention en cas d'urgence ?",
       answer: "Nous offrons un support d'urgence 24/7 et pouvons généralement intervenir sur les appels d'urgence dans un délai de 2-4 heures selon votre localisation. Pour les situations critiques, nous priorisons une intervention immédiate pour assurer votre sécurité et votre conformité."
     },
@@ -30,15 +26,7 @@ export default function FAQ() {
     },
     {
       question: "Proposez-vous des formations de sécurité incendie ?",
-      answer: "Oui, nous proposons des formations complètes de sécurité incendie incluant la formation pratique sur extincteurs, les procédures d'évacuation, la formation de gardien incendie, et des cours en ligne. La formation peut être effectuée sur place dans vos locaux ou dans notre centre de formation."
-    },
-    {
-      question: "Quelle est la différence entre BAES et éclairage de secours ?",
-      answer: "Les BAES (Blocs Autonomes d'Éclairage de Sécurité) sont des unités d'éclairage de secours autonomes avec leur propre batterie de secours. L'éclairage de secours peut désigner à la fois les unités BAES et les systèmes à batterie centrale. Les unités BAES sont idéales pour les petites installations, tandis que les systèmes centraux conviennent mieux aux grands bâtiments."
-    },
-    {
-      question: "Combien coûte un système d'alarme incendie ?",
-      answer: "Le coût d'un système d'alarme incendie varie selon la taille de vos locaux, le type de système requis (conventionnel ou adressable) et les exigences spécifiques. Nous fournissons des devis gratuits et sans engagement adaptés à vos besoins. Contactez-nous pour une estimation détaillée."
+      answer: "Oui nous proposeront une formation de sécurite incendie incluant la formation pratique sur les extincteurs et les procédures d'évacuations. La formation sera effectué sur place dans vos locaux."
     },
     {
       question: "Quelle maintenance est requise pour les systèmes d'alarme incendie ?",
@@ -90,7 +78,7 @@ export default function FAQ() {
                   <div className="flex items-center gap-3 sm:gap-4 pr-4">
                     <img 
                       src="/logo.png" 
-                      alt="Nova Safety" 
+                      alt="Nova SSI" 
                       className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
                     />
                     <h3 className="font-semibold text-gray-900 text-sm sm:text-base lg:text-lg leading-tight">

@@ -145,20 +145,20 @@ export default function EpreuveService() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contactez-nous</h3>
               
               <div className="space-y-4">
-                <button 
-                  onClick={() => setShowContact(true)}
+                <a 
+                  href="tel:0607117838"
                   className="w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Parler à un expert</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
                 
-                <button className="w-full bg-green-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-green-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg">
+                <a href="/devis" className="w-full bg-green-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-green-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg">
                   <FileText className="w-5 h-5" />
                   <span>Faire un devis</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
@@ -169,7 +169,7 @@ export default function EpreuveService() {
                     <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
-                  <p className="text-sm">Email: contact@novasafety.fr</p>
+                  <p className="text-sm">Email: contact@nova-ssi.fr</p>
                 </div>
               </div>
             </div>

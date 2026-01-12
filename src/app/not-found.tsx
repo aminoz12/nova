@@ -28,7 +28,7 @@ export default function NotFound() {
               <p className="text-gray-600 text-sm">
                 Need help? Contact us at{' '}
                 <a 
-                  href="tel:08007313630" 
+                  href="tel:0607117838" 
                   className="text-red-600 hover:text-red-800 font-medium underline"
                 >
                   06 07 11 78 38

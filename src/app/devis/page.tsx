@@ -282,7 +282,7 @@ export default function DevisPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:08007313630" 
+                  href="tel:0607117838" 
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all"
                 >
                   <Phone className="w-5 h-5" />

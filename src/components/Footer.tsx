@@ -4,10 +4,10 @@ export default function Footer() {
   const footerLinks = {
     services: [
       { name: "Évaluation des Risques d'Incendie", href: "#" },
-      { name: "Conception et Installation d'Alarmes Incendie", href: "#" },
-      { name: "Test Hebdomadaire d'Alarmes Incendie", href: "#" },
+      { name: "Installation et maintenance alarme type 4 d'Alarmes Incendie", href: "#" },
+      { name: "Plan de secours ( évacuation et intervention )", href: "#" },
       { name: "Maintenance d'Alarmes Incendie", href: "#" },
-      { name: "Fourniture d'Extincteurs", href: "/extincteurs" },
+      { name: "Extincteur et pièce détachée d'Extincteurs", href: "/extincteurs" },
       { name: "Éclairage de Secours (BAES)", href: "/baes" },
       { name: "Désenfumage", href: "/desenfumage" },
       { name: "RIA (Robinets d'Incendie Armés)", href: "/ria" },
@@ -21,12 +21,13 @@ export default function Footer() {
       { name: "Hôtellerie & Loisirs", href: "#" }
     ],
     company: [
-      { name: "À Propos de Nous", href: "#about" },
+      { name: "À Propos de Nous", href: "/apropos" },
       { name: "Témoignages", href: "#testimonials" },
       { name: "Actualités", href: "#" },
       { name: "Contactez-nous", href: "#contact" },
-      { name: "Politique de Confidentialité", href: "#" },
-      { name: "Termes & Conditions", href: "#" }
+      { name: "Politique de Confidentialité", href: "/politique-de-confidentialite" },
+      { name: "Termes & Conditions", href: "/termes-conditions" },
+      { name: "Politique de Cookies", href: "/politique-cookies" }
     ]
   }
 
@@ -45,12 +46,12 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-6 text-sm sm:text-base leading-relaxed">
-              Nova SSI  est votre partenaire de confiance pour tous vos besoins en protection incendie et systèmes de sécurité. Avec plus de 75 ans d'expérience, nous offrons des services complets et certifiés.
+              Nova SSI  est votre partenaire de confiance pour tous vos besoins en protection incendie et systèmes de sécurité. Avec plus de 12 ans d'expérience, nous offrons des services complets et certifiés.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 flex-shrink-0" />
-                <a href="tel:08007313630" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">
+                <a href="tel:0607117838" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">
                   06 07 11 78 38
                 </a>
               </div>
@@ -139,14 +140,14 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2024 Services de Protection Incendie. Tous droits réservés.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+            <div className="flex flex-wrap gap-4 text-sm">
+              <a href="/politique-de-confidentialite" className="bg-gray-800 hover:bg-red-600 px-3 py-2 rounded-lg transition-colors">
                 Politique de Confidentialité
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+              <a href="/termes-conditions" className="bg-gray-800 hover:bg-red-600 px-3 py-2 rounded-lg transition-colors">
                 Termes & Conditions
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+              <a href="/politique-cookies" className="bg-gray-800 hover:bg-red-600 px-3 py-2 rounded-lg transition-colors">
                 Politique de Cookies
               </a>
             </div>

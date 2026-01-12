@@ -63,7 +63,7 @@ export default function ContactPage() {
 
               {/* Phone */}
               <a 
-                href="tel:08007313630" 
+                href="tel:0607117838" 
                 className="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border-2 border-transparent hover:border-blue-500 overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
@@ -95,72 +95,136 @@ export default function ContactPage() {
               </a>
             </div>
 
-            {/* Map and Location Section */}
+            {/* Contact Form Section */}
             <div className="grid lg:grid-cols-2 gap-8 mb-16">
-              {/* Map */}
-              <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200">
-                <div className="relative h-96 md:h-[500px]">
-                  <iframe
-                    src={mapEmbedUrl}
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="absolute inset-0"
-                  ></iframe>
-                </div>
-                <div className="p-6 bg-gradient-to-r from-gray-50 to-white">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                        <MapPin className="w-6 h-6 text-red-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-gray-900">Notre Localisation</h3>
-                        <p className="text-sm text-gray-600">Unité 81 Roman Way, Preston</p>
-                      </div>
-                    </div>
-                    <a
-                      href={directionsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-red-700 transition-all transform hover:scale-105 shadow-lg"
-                    >
-                      <Navigation className="w-5 h-5" />
-                      Itinéraire
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+              {/* Contact Form */}
+              <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center">
+                    <Mail className="w-7 h-7 text-red-600" />
                   </div>
+                  <h2 className="text-2xl font-bold text-gray-900">Envoyez-nous un Message</h2>
                 </div>
+                
+                <form className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Nom *</label>
+                      <input 
+                        type="text" 
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                        placeholder="Votre nom"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Entreprise</label>
+                      <input 
+                        type="text" 
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                        placeholder="Nom de l'entreprise"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                      <input 
+                        type="email" 
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                        placeholder="votre@email.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Téléphone *</label>
+                      <input 
+                        type="tel" 
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all"
+                        placeholder="06 07 11 78 38"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Type de Service</label>
+                    <select className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all">
+                      <option value="">Sélectionnez un service</option>
+                      <option value="evaluation">Évaluation des risques</option>
+                      <option value="installation">Installation d'alarmes</option>
+                      <option value="maintenance">Maintenance</option>
+                      <option value="extincteurs">Extincteurs</option>
+                      <option value="baes">Éclairage BAES</option>
+                      <option value="desenfumage">Désenfumage</option>
+                      <option value="ria">RIA</option>
+                      <option value="formation">Formation</option>
+                      <option value="autre">Autre</option>
+                    </select>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                    <textarea 
+                      required
+                      rows={5}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-all resize-none"
+                      placeholder="Décrivez votre besoin ou votre projet..."
+                    ></textarea>
+                  </div>
+                  
+                  <div className="flex items-center gap-2">
+                    <input 
+                      type="checkbox" 
+                      id="urgent"
+                      className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+                    />
+                    <label htmlFor="urgent" className="text-sm text-gray-700">
+                      Demande urgente
+                    </label>
+                  </div>
+                  
+                  <button 
+                    type="submit"
+                    className="w-full bg-red-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-red-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-red-500/50 flex items-center justify-center gap-2"
+                  >
+                    <Mail className="w-5 h-5" />
+                    Envoyer le Message
+                  </button>
+                </form>
               </div>
 
-              {/* Contact Information */}
+              {/* Contact Information Cards */}
               <div className="space-y-6">
-                {/* Address Card */}
-                <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center">
-                      <MapPin className="w-7 h-7 text-red-600" />
-                    </div>
-                    <h2 className="text-2xl font-bold text-gray-900">Notre Adresse</h2>
-                  </div>
-                  <div className="space-y-3">
-                    <p className="text-gray-700 leading-relaxed text-lg">
-                      <span className="font-semibold text-gray-900">Unité 81 Roman Way Industrial Estate</span><br />
-                      Preston, Lancashire<br />
-                      PR2 5BB, Royaume-Uni
-                    </p>
-                    <a
-                      href={directionsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors mt-4"
+                {/* Quick Contact */}
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border border-red-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Rapide</h3>
+                  <div className="space-y-4">
+                    <a 
+                      href="tel:0607117838"
+                      className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-red-50 transition-colors group"
                     >
-                      <Navigation className="w-5 h-5" />
-                      Obtenir l'itinéraire
-                      <ExternalLink className="w-4 h-4" />
+                      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                        <Phone className="w-6 h-6 text-blue-600" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900">Appel d'urgence</p>
+                        <p className="text-blue-600 font-bold">06 07 11 78 38</p>
+                      </div>
+                    </a>
+                    
+                    <a 
+                      href="mailto:contact@nova-ssi.fr"
+                      className="flex items-center gap-4 p-4 bg-white rounded-xl hover:bg-red-50 transition-colors group"
+                    >
+                      <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center group-hover:bg-red-200 transition-colors">
+                        <Mail className="w-6 h-6 text-red-600" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900">Email</p>
+                        <p className="text-red-600 font-bold text-sm">contact@nova-ssi.fr</p>
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -191,6 +255,25 @@ export default function ContactPage() {
                         <p className="font-semibold text-red-600">Urgences</p>
                       </div>
                       <p className="text-gray-600 font-medium">Disponible 24/7</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Response Time */}
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Temps de Réponse</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                      <p className="text-gray-700"><strong>Email:</strong> Moins de 2 heures</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                      <p className="text-gray-700"><strong>Téléphone:</strong> Immédiat</p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <p className="text-gray-700"><strong>Urgences:</strong> Intervention rapide</p>
                     </div>
                   </div>
                 </div>

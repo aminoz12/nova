@@ -117,7 +117,7 @@ export default function ExtincteursService() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Maintenance Garantie</h4>
-                    <p className="text-gray-600 text-sm">Contrat de maintenance annuelle et préventive. préventive</p>
+                    <p className="text-gray-600 text-sm">Contrat de maintenance annuelle et préventive.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

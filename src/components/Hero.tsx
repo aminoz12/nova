@@ -60,7 +60,7 @@ export default function Hero() {
                       <Shield className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div className="min-w-0">
-                      <h3 className="font-bold text-white text-xs sm:text-sm mb-0.5 sm:mb-1 leading-tight">conformité et sécurité</h3>
+                      <h3 className="font-bold text-white text-xs sm:text-sm mb-0.5 sm:mb-1 leading-tight">Conformité et sécurité</h3>
                       <p className="text-xs text-white/90 hidden sm:block">UKAS & ISO 9001</p>
                       <p className="text-xs text-white/90 sm:hidden">Certifié</p>
                     </div>

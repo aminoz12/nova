@@ -84,7 +84,7 @@ export default function Services() {
 
         <div className="bg-red-600 text-white rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">NE RETARDEZ PAS APPELEZ-NOUS AUJOURD'HUI</h2>
-          <a href="tel:08007313630" className="text-4xl font-bold hover:text-red-200 transition-colors inline-flex items-center gap-3">
+          <a href="tel:0607117838" className="text-4xl font-bold hover:text-red-200 transition-colors inline-flex items-center gap-3">
             <Phone className="w-8 h-8" />
             06 07 11 78 38
           </a>

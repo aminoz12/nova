@@ -21,7 +21,7 @@ export default function AboutPage() {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Expertise Éprouvée",
-      description: "Plus de 75 ans d'expérience dans la protection incendie et la sécurité. Notre équipe d'experts est à votre service.",
+      description: "Plus de 12 ans d'expérience dans la protection incendie et la sécurité. Notre équipe d'experts est à votre service.",
       color: "from-green-500 to-green-600"
     },
     {
@@ -65,7 +65,7 @@ export default function AboutPage() {
               À Propos de Nous
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl">
-              Votre partenaire de confiance pour la protection incendie et la sécurité depuis plus de 75 ans
+              Votre partenaire de confiance pour la protection incendie et la sécurité depuis plus de 12 ans
             </p>
           </div>
         </div>
@@ -101,11 +101,11 @@ export default function AboutPage() {
                 Notre Histoire
               </div>
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
-                Plus de 75 Ans d'Excellence
+                Plus de 12 Ans d'Excellence
               </h2>
               <div className="space-y-5 text-gray-600 leading-relaxed text-lg">
                 <p>
-                  Depuis plus de 75 ans, nous sommes un leader reconnu dans le domaine de la protection incendie 
+                  Depuis plus de 12 ans, nous sommes un leader reconnu dans le domaine de la protection incendie 
                   et de la sécurité. Notre engagement envers l'excellence et l'innovation nous a permis de devenir 
                   un partenaire de confiance pour des milliers de clients à travers le pays.
                 </p>
@@ -252,7 +252,7 @@ export default function AboutPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Plus de 75 ans d'expérience dans l'industrie",
+              "Plus de 12 ans d'expérience dans l'industrie",
               "Équipe de techniciens certifiés et expérimentés",
               "Support 24/7 pour les urgences",
               "Certifications BAFE, NSI Gold, UKAS & ISO 9001",

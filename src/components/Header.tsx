@@ -59,6 +59,13 @@ export default function Header() {
               </a>
             </div>
 
+            {/* Mobile Brand Name - Only visible on mobile */}
+            <div className="lg:hidden">
+              <h1 className="text-xl font-bold" style={{ color: '#696969' }}>
+                NOVA SSI
+              </h1>
+            </div>
+
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               <a href="/" className="text-gray-700 hover:text-red-600 transition-colors font-medium">Accueil</a>

@@ -49,19 +49,15 @@ export default function ExtincteursService() {
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs à poudre ABC (polyvalents)</span>
+                        <span>Extincteur à poudre</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs à eau pulvérisée</span>
+                        <span>Extincteur à eau (gamme sans fluor)</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs à CO2 (pour feux électriques)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs à mousse (pour feux de liquides)</span>
+                        <span>Extincteur CO2</span>
                       </li>
                     </ul>
                   </div>
@@ -123,7 +119,7 @@ export default function ExtincteursService() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Maintenance Garantie</h4>
-                    <p className="text-gray-600">Contrat de maintenance annuelle et préventive. préventive</p>
+                    <p className="text-gray-600">Contrat de maintenance annuelle et préventive. </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-purple-50 transition-colors">
@@ -145,20 +141,20 @@ export default function ExtincteursService() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contactez-nous</h3>
               
               <div className="space-y-4">
-                <button 
-                  onClick={() => setShowContact(true)}
+                <a 
+                  href="tel:0607117838"
                   className="w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Parler à un expert</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
                 
-                <button className="w-full bg-green-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-green-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg">
+                <a href="/devis" className="w-full bg-green-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-green-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 group shadow-lg">
                   <FileText className="w-5 h-5" />
                   <span>Faire un devis</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
@@ -169,7 +165,7 @@ export default function ExtincteursService() {
                     <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
-                  <p className="text-sm">Email: contact@novasafety.fr</p>
+                  <p className="text-sm">Email: contact@nova-ssi.fr</p>
                 </div>
               </div>
             </div>
