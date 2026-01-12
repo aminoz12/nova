@@ -1,10 +1,14 @@
 'use client'
 
 import { Shield, Eye, Lock, Database, User, Globe } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <Header />
+      <div className="min-h-screen bg-gray-50">
       <div className="container-custom py-16">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -125,13 +129,15 @@ export default function PrivacyPolicy() {
               </p>
               <div className="space-y-2">
                 <p className="text-gray-600"><strong>Email :</strong> contact@nova-ssi.fr</p>
-                <p className="text-gray-600"><strong>Téléphone :</strong> 01 XX XX XX XX</p>
-                <p className="text-gray-600"><strong>Adresse :</strong> Votre adresse, Paris, France</p>
+                <p className="text-gray-600"><strong>Téléphone :</strong> 06 07 11 78 38</p>
+                <p className="text-gray-600"><strong>Adresse :</strong> île de France, Paris</p>
               </div>
             </section>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Footer />
+    </>
   )
 }

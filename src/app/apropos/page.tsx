@@ -1,20 +1,24 @@
 'use client'
 
 import { Shield, Users, Award, Clock, CheckCircle, Target } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container-custom py-16">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Shield className="w-10 h-10 text-red-600" />
+    <>
+      <Header />
+      <div className="min-h-screen bg-gray-50">
+        <div className="container-custom py-16">
+          <div className="max-w-4xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-10 h-10 text-red-600" />
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">À Propos de Nous</h1>
-            <p className="text-lg text-gray-600">
-              Votre partenaire de confiance en protection incendie et systèmes de sécurité
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">À Propos de Nous</h1>
+              <p className="text-lg text-gray-600">
+                Votre partenaire de confiance en protection incendie et systèmes de sécurité
             </p>
           </div>
 
@@ -151,17 +155,19 @@ export default function AboutUs() {
                 Contactez-nous dès aujourd'hui pour une évaluation gratuite de vos besoins en sécurité incendie.
               </p>
               <div className="flex justify-center gap-4">
-                <a href="#contact" className="btn-primary">
+                <a href="/contact" className="btn-primary">
                   Nous Contacter
                 </a>
-                <a href="#services" className="btn-secondary">
+                <a href="/equipements" className="btn-secondary">
                   Découvrir nos Services
                 </a>
               </div>
             </section>
           </div>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   )
 }

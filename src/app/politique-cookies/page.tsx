@@ -1,10 +1,14 @@
 'use client'
 
 import { Cookie, Settings, Shield, Eye, Database, CheckCircle, XCircle } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <Header />
+      <div className="min-h-screen bg-gray-50">
       <div className="container-custom py-16">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -219,14 +223,16 @@ export default function CookiePolicy() {
                 Pour toute question concernant notre politique de cookies :
               </p>
               <div className="space-y-2">
-                <p className="text-gray-600"><strong>Email :</strong> privacy@nova-ssi.fr</p>
-                <p className="text-gray-600"><strong>Téléphone :</strong> 01 XX XX XX XX</p>
+                <p className="text-gray-600"><strong>Email :</strong> contact@nova-ssi.fr</p>
+                <p className="text-gray-600"><strong>Téléphone :</strong> 06 07 11 78 38</p>
                 <p className="text-gray-600"><strong>DPO :</strong> dpo@nova-ssi.fr</p>
               </div>
             </section>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Footer />
+    </>
   )
 }

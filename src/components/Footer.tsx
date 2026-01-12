@@ -23,7 +23,6 @@ export default function Footer() {
     company: [
       { name: "À Propos de Nous", href: "/apropos" },
       { name: "Témoignages", href: "#testimonials" },
-      { name: "Actualités", href: "#" },
       { name: "Contactez-nous", href: "#contact" },
       { name: "Politique de Confidentialité", href: "/politique-de-confidentialite" },
       { name: "Termes & Conditions", href: "/termes-conditions" },
