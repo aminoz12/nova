@@ -3,6 +3,12 @@ import { google } from 'googleapis'
 // Initialize Google Sheets API
 // Supports both Service Account and OAuth 2.0 authentication methods
 async function getAuthClient() {
+  // Debug: Log available environment variables (without sensitive data)
+  console.log('🔍 Checking Google Sheets authentication...')
+  console.log('GOOGLE_SERVICE_ACCOUNT_EMAIL:', process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL ? '✅ Set' : '❌ Missing')
+  console.log('GOOGLE_PRIVATE_KEY:', process.env.GOOGLE_PRIVATE_KEY ? `✅ Set (${process.env.GOOGLE_PRIVATE_KEY.length} chars)` : '❌ Missing')
+  console.log('GOOGLE_REFRESH_TOKEN:', process.env.GOOGLE_REFRESH_TOKEN ? '✅ Set' : '❌ Missing')
+
   // Method 1: OAuth 2.0 (if refresh token is provided)
   if (process.env.GOOGLE_REFRESH_TOKEN) {
     console.log('Using OAuth 2.0 authentication')
@@ -23,11 +29,50 @@ async function getAuthClient() {
   if (process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY) {
     console.log('Using Service Account authentication:', process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL)
     
-    const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n')
+    // Handle both escaped and unescaped newlines
+    let privateKey = process.env.GOOGLE_PRIVATE_KEY
     
-    if (!privateKey || !privateKey.includes('BEGIN PRIVATE KEY')) {
-      throw new Error('Invalid GOOGLE_PRIVATE_KEY format. Make sure it includes the full private key with BEGIN/END markers.')
+    // Remove surrounding quotes if present (handle both single and double quotes)
+    if ((privateKey.startsWith('"') && privateKey.endsWith('"')) || 
+        (privateKey.startsWith("'") && privateKey.endsWith("'"))) {
+      privateKey = privateKey.slice(1, -1)
     }
+    
+    // Handle different newline formats
+    // Case 1: Escaped newlines (\n) - replace with actual newlines
+    if (privateKey.includes('\\n')) {
+      privateKey = privateKey.replace(/\\n/g, '\n')
+    }
+    // Case 2: Already has actual newlines (Vercel might convert them)
+    // Case 3: No newlines at all - this would be invalid, but we'll try to fix it
+    
+    // Ensure the key has proper newlines between sections
+    // If BEGIN and END are on the same "line" (no newline), add them
+    if (!privateKey.includes('\n') && privateKey.includes('BEGIN PRIVATE KEY') && privateKey.includes('END PRIVATE KEY')) {
+      // Try to add newlines - this is a fallback for malformed keys
+      privateKey = privateKey.replace('-----BEGIN PRIVATE KEY-----', '-----BEGIN PRIVATE KEY-----\n')
+      privateKey = privateKey.replace('-----END PRIVATE KEY-----', '\n-----END PRIVATE KEY-----')
+    }
+    
+    // Final validation
+    if (!privateKey || !privateKey.includes('BEGIN PRIVATE KEY')) {
+      console.error('❌ Invalid GOOGLE_PRIVATE_KEY format')
+      console.error('Key length:', privateKey.length)
+      console.error('Key starts with:', privateKey.substring(0, 50))
+      console.error('Has BEGIN:', privateKey.includes('BEGIN'))
+      console.error('Has END:', privateKey.includes('END'))
+      throw new Error('Invalid GOOGLE_PRIVATE_KEY format. Make sure it includes the full private key with BEGIN/END markers and proper newlines.')
+    }
+    
+    // Log key format info (without exposing the actual key)
+    const hasNewlines = privateKey.includes('\n')
+    const lineCount = privateKey.split('\n').length
+    console.log('🔑 Private key format:', {
+      length: privateKey.length,
+      hasNewlines,
+      lineCount,
+      startsWithBegin: privateKey.trim().startsWith('-----BEGIN')
+    })
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -40,6 +85,17 @@ async function getAuthClient() {
     return auth
   }
 
+  // Detailed error message
+  const missingVars = []
+  if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL) missingVars.push('GOOGLE_SERVICE_ACCOUNT_EMAIL')
+  if (!process.env.GOOGLE_PRIVATE_KEY) missingVars.push('GOOGLE_PRIVATE_KEY')
+  if (!process.env.GOOGLE_REFRESH_TOKEN) {
+    if (missingVars.length > 0) {
+      // Service Account method missing vars
+      throw new Error(`Google Sheets authentication not configured. Missing: ${missingVars.join(', ')}. Please set GOOGLE_SERVICE_ACCOUNT_EMAIL and GOOGLE_PRIVATE_KEY in your environment variables.`)
+    }
+  }
+  
   throw new Error('Google Sheets authentication not configured. Please set either GOOGLE_REFRESH_TOKEN (OAuth 2.0) or GOOGLE_SERVICE_ACCOUNT_EMAIL and GOOGLE_PRIVATE_KEY (Service Account) in your environment variables.')
 }
 
