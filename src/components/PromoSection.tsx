@@ -19,18 +19,18 @@ export default function PromoSection() {
         <div className="absolute left-0 top-0 bottom-0 w-full lg:w-2/3 bg-gradient-to-r from-blue-900 via-blue-900/95 to-transparent z-10"></div>
 
         {/* Content - Left Side */}
-        <div className="relative z-20 w-full py-16 sm:py-20 md:py-24 flex items-center">
+        <div className="relative z-20 w-full py-12 sm:py-16 md:py-20 lg:py-24 flex items-center">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl lg:max-w-xl">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight uppercase">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-3 sm:mb-4 md:mb-6 leading-tight uppercase px-2 sm:px-0">
                 POUR LES <span className="text-red-500">GRANDE</span> ÉTABLISSEMENT
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed uppercase">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-5 sm:mb-6 md:mb-8 leading-relaxed uppercase px-2 sm:px-0">
                Bénéficiez d'un forfait avec les recharge d'extincteur totalement gratuite 
               </p>
               <a 
                 href="/devis" 
-                className="inline-flex items-center gap-2 bg-[#ef4444] hover:bg-red-600 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all transform hover:scale-105 shadow-2xl hover:shadow-red-500/50"
+                className="inline-flex items-center gap-2 bg-[#ef4444] hover:bg-red-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 md:py-4 rounded-xl font-bold text-sm sm:text-base md:text-lg transition-all transform hover:scale-105 active:scale-95 shadow-2xl hover:shadow-red-500/50 ml-2 sm:ml-0"
               >
                 <span>Demander un Devis</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

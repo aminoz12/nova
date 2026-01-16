@@ -13,7 +13,7 @@ export default function Services() {
       icon: <FireExtinguisher className="w-8 h-8" />,
       title: "Fourniture et Maintenance d'Extincteurs",
       description: "Produits de la plus haute qualité à des prix compétitifs. Du CO₂ et mousse à la poudre et l'eau, chaque extincteur est approuvé BS EN3.",
-      features: ["Ingénieurs certifiés BAFE", "Installation nationale", "Support complet de conformité"],
+      features: ["Techniciens expérimentés et habilités", "Installation nationale", "Support complet de conformité"],
       link: "#"
     },
     {
@@ -47,32 +47,32 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Services</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Solutions complètes de protection incendie et de sécurité pour votre entreprise
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 text-red-600">
+            <div key={index} className="bg-white rounded-xl shadow-lg p-6 sm:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-red-100 w-14 h-14 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-4 sm:mb-6 text-red-600 flex-shrink-0">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-              <p className="text-gray-600 mb-6">{service.description}</p>
-              <ul className="space-y-2 mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">{service.title}</h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">{service.description}</p>
+              <ul className="space-y-2 mb-4 sm:mb-6">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-600 rounded-full"></div>
-                    <span className="text-gray-600">{feature}</span>
+                  <li key={idx} className="flex items-start gap-2 sm:gap-3">
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-sm sm:text-base text-gray-600 leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <a href={service.link} className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center gap-2">
+              <a href={service.link} className="text-red-600 font-semibold hover:text-red-700 inline-flex items-center gap-2 text-sm sm:text-base transition-colors">
                 En savoir plus
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -82,13 +82,13 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="bg-red-600 text-white rounded-2xl p-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">NE RETARDEZ PAS APPELEZ-NOUS AUJOURD'HUI</h2>
-          <a href="tel:0607117838" className="text-4xl font-bold hover:text-red-200 transition-colors inline-flex items-center gap-3">
-            <Phone className="w-8 h-8" />
-            06 07 11 78 38
+        <div className="bg-red-600 text-white rounded-2xl p-8 sm:p-10 md:p-12 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 px-4 leading-tight">NE RETARDEZ PAS APPELEZ-NOUS AUJOURD'HUI</h2>
+          <a href="tel:0607117838" className="text-2xl sm:text-3xl md:text-4xl font-bold hover:text-red-200 transition-colors inline-flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
+            <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
+            <span className="break-all">06 07 11 78 38</span>
           </a>
-          <p className="mt-6 text-xl">Services experts de protection incendie quand vous en avez le plus besoin</p>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-red-100 px-4">Services experts de protection incendie quand vous en avez le plus besoin</p>
         </div>
       </div>
     </section>

@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="fr" className="scroll-smooth">
+      <body className={`${inter.className} overflow-x-hidden`}>
         {children}
         {/*Start of Tawk.to Script*/}
         <script

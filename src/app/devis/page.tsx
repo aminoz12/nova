@@ -18,10 +18,49 @@ export default function DevisPage() {
     urgency: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: '' })
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Quote request submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: '' })
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          type: 'devis'
+        }),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitStatus({ type: 'success', message: 'Votre demande de devis a été envoyée avec succès ! Nous vous répondrons dans les 24-48 heures.' })
+        setFormData({
+          firstName: '',
+          lastName: '',
+          company: '',
+          email: '',
+          phone: '',
+          address: '',
+          service: '',
+          projectDescription: '',
+          urgency: ''
+        })
+      } else {
+        setSubmitStatus({ type: 'error', message: data.message || 'Une erreur est survenue. Veuillez réessayer.' })
+      }
+    } catch (error) {
+      setSubmitStatus({ type: 'error', message: 'Une erreur est survenue. Veuillez réessayer plus tard.' })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -98,6 +137,12 @@ export default function DevisPage() {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
+                {submitStatus.type && (
+                  <div className={`p-4 rounded-lg ${submitStatus.type === 'success' ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+                    <p className="text-sm font-medium">{submitStatus.message}</p>
+                  </div>
+                )}
+                
                 {/* Personal Information */}
                 <div className="border-b border-gray-200 pb-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Informations Personnelles</h3>
@@ -262,10 +307,11 @@ export default function DevisPage() {
                 <div className="pt-6">
                   <button 
                     type="submit" 
-                    className="w-full bg-red-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-red-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full bg-red-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-red-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Send className="w-5 h-5" />
-                    Envoyer la Demande de Devis
+                    {isSubmitting ? 'Envoi en cours...' : 'Demander Un Devis'}
                   </button>
                   <p className="text-center text-gray-500 text-sm mt-4">
                     Nous vous répondrons dans les 24-48 heures suivant votre demande

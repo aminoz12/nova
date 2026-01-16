@@ -56,7 +56,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="testimonials" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-64 h-64 bg-red-600 rounded-full blur-3xl"></div>
@@ -64,9 +64,9 @@ export default function Testimonials() {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Témoignages</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">Témoignages</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Ce que nos clients disent de nos services de protection incendie et de sécurité
           </p>
         </div>
@@ -88,34 +88,34 @@ export default function Testimonials() {
                       .map((testimonial, index) => (
                         <div 
                           key={index} 
-                          className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 w-full max-w-md"
+                          className="bg-white rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 w-full max-w-md mx-auto"
                         >
-                          <div className="flex items-start mb-4 sm:mb-6">
-                            <div className="bg-gradient-to-br from-red-500 to-red-600 p-2 sm:p-3 rounded-xl mr-3 sm:mr-4">
-                              <Quote className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+                          <div className="flex items-start mb-3 sm:mb-4 md:mb-6">
+                            <div className="bg-gradient-to-br from-red-500 to-red-600 p-2 sm:p-2.5 md:p-3 rounded-xl mr-2 sm:mr-3 md:mr-4 flex-shrink-0">
+                              <Quote className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
                             </div>
-                            <div className="flex-1">
-                              <div className="flex mb-2">
+                            <div className="flex-1 min-w-0">
+                              <div className="flex mb-2 flex-wrap">
                                 {[...Array(testimonial.rating)].map((_, i) => (
-                                  <Star key={i} className="w-3 h-3 sm:w-5 sm:h-5 text-yellow-400 fill-current" />
+                                  <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-yellow-400 fill-current flex-shrink-0" />
                                 ))}
                               </div>
-                              <p className="text-xs sm:text-sm text-gray-500 font-medium">{testimonial.company}</p>
+                              <p className="text-xs sm:text-sm text-gray-500 font-medium truncate">{testimonial.company}</p>
                             </div>
                           </div>
                           
-                          <p className="text-gray-700 mb-4 sm:mb-6 italic leading-relaxed text-sm sm:text-base">
+                          <p className="text-gray-700 mb-3 sm:mb-4 md:mb-6 italic leading-relaxed text-sm sm:text-base line-clamp-4 sm:line-clamp-none">
                             "{testimonial.text}"
                           </p>
                           
                           <div className="flex items-center pt-3 sm:pt-4 border-t border-gray-100">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mr-3 sm:mr-4">
-                              <span className="text-red-600 font-bold text-sm sm:text-lg">
+                            <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mr-2 sm:mr-3 md:mr-4 flex-shrink-0">
+                              <span className="text-red-600 font-bold text-xs sm:text-sm md:text-lg">
                                 {testimonial.name.charAt(0)}
                               </span>
                             </div>
-                            <div>
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base">{testimonial.name}</h4>
+                            <div className="min-w-0 flex-1">
+                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base truncate">{testimonial.name}</h4>
                               <p className="text-xs sm:text-sm text-gray-600">Client Vérifié</p>
                             </div>
                           </div>
@@ -165,17 +165,17 @@ export default function Testimonials() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-12 text-white shadow-2xl">
-            <h3 className="text-3xl font-bold mb-4">
+        <div className="text-center mt-10 sm:mt-12 md:mt-16 px-4">
+          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 sm:p-10 md:p-12 text-white shadow-2xl">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
               Rejoignez des centaines d'entreprises satisfaites
             </h3>
-            <p className="text-xl mb-8 text-red-100">
+            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-red-100">
               Qui nous font confiance pour leurs besoins de protection incendie
             </p>
             <a 
               href="#contact" 
-              className="inline-flex items-center bg-white text-red-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center bg-white text-red-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg text-sm sm:text-base"
             >
               Commencer Aujourd'hui
             </a>

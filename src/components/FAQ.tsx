@@ -58,30 +58,31 @@ export default function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-16 sm:py-20 bg-gray-50">
+    <section id="faq" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="container-custom">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Questions Fréquemment Posées</h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">Questions Fréquemment Posées</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Trouvez des réponses aux questions courantes sur nos services de protection incendie
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-0">
           {faqs.slice(0, visibleCount).map((faq, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-3 sm:mb-4">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full text-left bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-4 sm:p-6 focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="w-full text-left bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-4 sm:p-5 md:p-6 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                aria-expanded={openIndex === index}
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 sm:gap-4 pr-4">
+                <div className="flex items-center justify-between gap-3 sm:gap-4">
+                  <div className="flex items-start gap-2 sm:gap-3 md:gap-4 pr-2 flex-1 min-w-0">
                     <img 
                       src="/logo.png" 
                       alt="Nova SSI" 
-                      className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+                      className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain flex-shrink-0 mt-0.5"
                     />
-                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base lg:text-lg leading-tight">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base md:text-lg leading-tight">
                       {faq.question}
                     </h3>
                   </div>
@@ -94,7 +95,7 @@ export default function FAQ() {
               </button>
               
               {openIndex === index && (
-                <div className="bg-white rounded-xl shadow-md mt-2 p-4 sm:p-6 border-t border-gray-100">
+                <div className="bg-white rounded-xl shadow-md mt-2 p-4 sm:p-5 md:p-6 border-t border-gray-100">
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                     {faq.answer}
                   </p>
@@ -104,10 +105,10 @@ export default function FAQ() {
           ))}
 
           {visibleCount < faqs.length && (
-            <div className="text-center mt-8">
+            <div className="text-center mt-6 sm:mt-8">
               <button
                 onClick={() => setVisibleCount(visibleCount + 4)}
-                className="bg-red-600 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/50"
+                className="bg-red-600 text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-red-700 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-red-500/50 text-sm sm:text-base"
               >
                 Voir Plus de Questions
               </button>

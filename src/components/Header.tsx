@@ -10,9 +10,9 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 sm:py-3 border-b border-gray-700">
+      <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 sm:py-2.5 md:py-3 border-b border-gray-700">
         <div className="container-custom">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4 md:gap-0">
             {/* Location */}
             <div className="flex items-center gap-2 text-xs sm:text-sm order-2 sm:order-1">
               <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-red-400 flex-shrink-0" />
@@ -22,21 +22,21 @@ export default function Header() {
             {/* Hours */}
             <div className="flex items-center gap-2 text-xs sm:text-sm order-1 sm:order-2">
               <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-red-400 flex-shrink-0" />
-              <span className="font-medium hidden sm:inline">Lun-Sam 8h-18h</span>
-              <span className="font-medium sm:hidden">Lun-Sam 8h-18h</span>
+              <span className="font-medium">Lun-Sam 8h-18h</span>
             </div>
             
             {/* Contact */}
-            <div className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm order-3">
-              <div className="hidden sm:flex items-center gap-2">
+            <div className="flex items-center gap-2 sm:gap-4 md:gap-6 text-xs sm:text-sm order-3">
+              <div className="hidden md:flex items-center gap-2">
                 <Mail className="w-4 h-4 text-red-400 flex-shrink-0" />
-                <span className="font-medium">contact@nova-ssi.fr</span>
+                <a href="mailto:contact@nova-ssi.fr" className="font-medium hover:text-red-200 transition-colors">
+                  contact@nova-ssi.fr
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-red-400 flex-shrink-0" />
                 <a href="tel:0607117838" className="font-bold text-red-300 hover:text-red-200 transition-colors">
-                  <span className="hidden sm:inline">06 07 11 78 38</span>
-                  <span className="sm:hidden">06 07 11 78 38</span>
+                  06 07 11 78 38
                 </a>
               </div>
             </div>
@@ -60,8 +60,8 @@ export default function Header() {
             </div>
 
             {/* Mobile Brand Name - Only visible on mobile */}
-            <div className="lg:hidden">
-              <h1 className="text-xl font-bold" style={{ color: '#696969' }}>
+            <div className="lg:hidden flex-1 text-center">
+              <h1 className="text-lg sm:text-xl font-bold" style={{ color: '#696969' }}>
                 NOVA SSI
               </h1>
             </div>
