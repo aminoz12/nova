@@ -6,6 +6,8 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { name, firstName, lastName, company, email, phone, address, service, message, projectDescription, urgency, type } = body
+    
+    console.log('📥 Received request:', { type, email, service })
 
     // Create transporter
     const transporter = nodemailer.createTransport({
@@ -146,9 +148,25 @@ export async function POST(request: NextRequest) {
     })
 
     // If it's a devis request, also insert into Google Sheets
+    console.log('🔍 Checking type:', type, 'is devis?', type === 'devis')
     if (type === 'devis') {
+      console.log('✅ Type is devis, attempting to insert to Google Sheets...')
+      console.log('📊 Data to insert:', {
+        firstName,
+        lastName,
+        name,
+        company,
+        email,
+        phone,
+        address,
+        service: displayService || service,
+        projectDescription,
+        message,
+        urgency
+      })
+      
       try {
-        await insertDevisToSheet({
+        const sheetResult = await insertDevisToSheet({
           firstName,
           lastName,
           name,
@@ -161,11 +179,21 @@ export async function POST(request: NextRequest) {
           message,
           urgency: urgency || ''
         })
+        console.log('✅ Google Sheets insertion successful:', sheetResult)
       } catch (sheetError: any) {
         // Log the error but don't fail the request if Google Sheets fails
-        console.error('Error inserting to Google Sheets:', sheetError)
+        console.error('❌ Error inserting to Google Sheets:', {
+          message: sheetError.message,
+          code: sheetError.code,
+          status: sheetError.response?.status,
+          statusText: sheetError.response?.statusText,
+          errors: sheetError.response?.data?.error || sheetError.errors,
+          stack: sheetError.stack?.substring(0, 500)
+        })
         // Continue - email was already sent successfully
       }
+    } else {
+      console.log('⚠️ Type is not devis, skipping Google Sheets insertion')
     }
 
     return NextResponse.json({ success: true, message: 'Email envoyé avec succès' })
