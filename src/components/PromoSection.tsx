@@ -23,7 +23,7 @@ export default function PromoSection() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl lg:max-w-xl">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-3 sm:mb-4 md:mb-6 leading-tight uppercase px-2 sm:px-0">
-                POUR LES <span className="text-red-500">GRANDE</span> ÉTABLISSEMENT
+                POUR LES <span className="text-red-500">GRANDS</span> ÉTABLISSEMENT
               </h2>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-5 sm:mb-6 md:mb-8 leading-relaxed uppercase px-2 sm:px-0">
                Profitez d’un forfait incluant la recharge des extincteurs entièrement gratuite. 
