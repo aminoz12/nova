@@ -26,7 +26,7 @@ export default function PromoSection() {
                 POUR LES <span className="text-red-500">GRANDE</span> ÉTABLISSEMENT
               </h2>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-5 sm:mb-6 md:mb-8 leading-relaxed uppercase px-2 sm:px-0">
-               Bénéficiez d'un forfait avec les recharge d'extincteur totalement gratuite 
+               Profitez d’un forfait incluant la recharge des extincteurs entièrement gratuite. 
               </p>
               <a 
                 href="/devis" 
