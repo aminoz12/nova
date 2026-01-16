@@ -123,7 +123,7 @@ export default function MaintenanceService() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Expertise Technique</h4>
-                    <p className="text-gray-600">Techniciens certifiés BAFE</p>
+                    <p className="text-gray-600">Techniciens expérimentés et habilités</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-purple-50 transition-colors">

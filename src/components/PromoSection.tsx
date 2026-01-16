@@ -23,7 +23,7 @@ export default function PromoSection() {
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl lg:max-w-xl">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight uppercase">
-                Vous etes une <span className="bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">grande</span> etablisement ?
+                POUR LES <span className="text-red-500">GRANDE</span> ÉTABLISSEMENT
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed uppercase">
                Bénéficiez d'un forfait avec les recharge d'extincteur totalement gratuite 

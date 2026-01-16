@@ -6,58 +6,22 @@ import { useState, useEffect } from 'react'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Commercial Client",
-      text: "Nous avons un contrat de service annuel avec Nova SSI  pour l'entretien de nos systèmes de sécurité. Je les recommande à toute entreprise.",
+      name: "Gérant Magasin",
+      text: "Excellent service de maintenance pour nos extincteurs réalisé par Nova SSI en 2025. Les techniciens sont très professionnels et ponctuels. Tous nos équipements sont maintenant conformes aux normes.",
       rating: 5,
-      company: "Société Commerciale"
+      company: "Magasin Pièces Auto"
     },
     {
-      name: "Business Owner",
-      text: "Système de sécurité intégré brillant installé et maintenu par Nova SSI . Réponse rapide à nos demandes. À recommander.",
+      name: "Propriétaire Restaurant",
+      text: "Nova SSI a effectué la maintenance de nos extincteurs et BAES en 2026. Service impeccable, équipe réactive et conseils pertinents. Nous recommandons vivement leurs services pour la sécurité incendie.",
       rating: 5,
-      company: "PME Technologique"
+      company: "Restaurant"
     },
     {
-      name: "Property Manager",
-      text: "L'équipe de Nova SSI  a été absolument brillante. Leurs compétences en service client sont excellentes – ils ont accommodé chaque résident. Travail très soigné.",
+      name: "Pharmacien",
+      text: "Maintenance régulière de nos extincteurs et BAES par Nova SSI depuis 2025. Très satisfait de leur professionnalisme et de leur expertise. Ils nous accompagnent parfaitement dans notre démarche de conformité.",
       rating: 5,
-      company: "Gestion Immobilière"
-    },
-    {
-      name: "Facilities Manager",
-      text: "Nous sommes vraiment satisfaits du travail de l'équipe Nova SSI  sur notre système incendie. Leurs conseils honnêtes nous ont aidés à maintenir notre système.",
-      rating: 5,
-      company: "Grande Entreprise"
-    },
-    {
-      name: "Site Manager",
-      text: "Le technicien de Nova SSI  est venu entretenir notre alarme et nous sommes très satisfaits. Son service, son attitude et son aide ont été de la plus haute qualité.",
-      rating: 5,
-      company: "Site Industriel"
-    },
-    {
-      name: "Long-term Client",
-      text: "Je fais affaire avec Nova SSI  depuis environ 1 an et en toute honnêteté, je ne peux rien leur reprocher. Leur réponse a toujours été rapide et l'entretien de très haute qualité.",
-      rating: 5,
-      company: "Client Fidèle"
-    },
-    {
-      name: "Restaurant Owner",
-      text: "Le système ANSUL installé par Nova SSI  s'intègre parfaitement et répond à toutes les exigences d'assurance. Nova SSI  a facilité tout le processus du début à la fin.",
-      rating: 5,
-      company: "Restauration"
-    },
-    {
-      name: "Operations Manager",
-      text: "Nous avons traité avec des entreprises de sécurité incendie auparavant, mais Nova SSI  se distingue. Sans tracas, ils nous ont fait économiser de l'argent.",
-      rating: 5,
-      company: "Direction Opérationnelle"
-    },
-    {
-      name: "University Contract Manager",
-      text: "Nova SSI  fournit un service excellent sur notre contrat depuis 2024. Le contrat couvre des sites éducatifs et corporatifs avec un service fiable et professionnel.",
-      rating: 5,
-      company: "Établissement Éducatif"
+      company: "Pharmacie"
     }
   ]
 

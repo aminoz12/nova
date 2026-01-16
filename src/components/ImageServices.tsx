@@ -160,17 +160,17 @@ export default function ImageServices() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-8 sm:mt-12 px-4">
-          <button className="bg-blue-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
+          <a href="tel:0607117838" className="bg-blue-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
             <Phone className="w-5 h-5 flex-shrink-0" />
             <span className="text-sm sm:text-base">Parler à un expert</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
           
-          <button className="bg-green-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg hover:shadow-green-500/50 transform hover:scale-105">
+          <a href="/devis" className="bg-green-600 text-white py-3 sm:py-4 px-6 sm:px-8 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 flex items-center justify-center space-x-2 group shadow-lg hover:shadow-green-500/50 transform hover:scale-105">
             <FileText className="w-5 h-5 flex-shrink-0" />
             <span className="text-sm sm:text-base">Faire un devis</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
     </section>
