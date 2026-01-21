@@ -16,7 +16,7 @@ export default function Header() {
             {/* Location */}
             <div className="flex items-center gap-2 text-xs sm:text-sm order-2 sm:order-1">
               <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-red-400 flex-shrink-0" />
-              <span className="font-medium truncate uppercase">île de France, Paris</span>
+              <span className="font-medium truncate uppercase">ÎLE-DE-FRANCE, PARIS</span>
             </div>
             
             {/* Hours */}

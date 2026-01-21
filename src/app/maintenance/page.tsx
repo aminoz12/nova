@@ -89,7 +89,7 @@ export default function MaintenanceService() {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Registre de sécurité mis à jours.</span>
+                        <span>Registre de sécurité mis à jour.</span>
                       </li>
                     </ul>
                   </div>

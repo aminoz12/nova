@@ -44,7 +44,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-6 text-sm sm:text-base leading-relaxed">
-              Nova SSI est votre partenaire de confiance pour tous vos besoins en protection incendie . Avec plus de 12 ans d'expérience, nous offrons des services complets et certifiés.
+              Nova SSI est votre partenaire de confiance pour tous vos besoins en protection incendie. Avec plus de 12 ans d'expérience, nous offrons des services complets et certifiés.
             </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-2 sm:gap-3">
@@ -62,7 +62,7 @@ export default function Footer() {
               <div className="flex items-start gap-2 sm:gap-3">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-red-400 flex-shrink-0 mt-1" />
                 <span className="text-gray-300 text-sm sm:text-base">
-                  île de France, Paris
+                  Île-de-France, Paris
                 </span>
               </div>
             </div>

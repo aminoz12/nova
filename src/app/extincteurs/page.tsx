@@ -80,7 +80,7 @@ export default function ExtincteursService() {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge et réépreuve tous les 5 ans</span>
+                        <span>Recharge et ré-épreuve tous les 5 ans</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-orange-600 mr-3 mt-0.5 flex-shrink-0" />

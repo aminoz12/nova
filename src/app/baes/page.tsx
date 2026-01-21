@@ -180,7 +180,7 @@ export default function BaesService() {
                     <span className="text-sm">06 07 11 78 38</span>
                   </p>
                   <p className="text-sm">Disponible 24/7 pour les urgences</p>
-                  <p className="text-sm">Email: contact@Nova SSI.fr</p>
+                  <p className="text-sm">Email: contact@nova-ssi.fr</p>
                 </div>
               </div>
 

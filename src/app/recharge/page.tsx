@@ -55,7 +55,7 @@ export default function RechargeService() {
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Recharge extincteur à eau pulvérisé + additif</span>
+                        <span>Recharge extincteur à eau pulvérisée + additif</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />

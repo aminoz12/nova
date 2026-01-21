@@ -10,7 +10,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: "Quels services de protection incendie proposez-vous ?",
-      answer: "Tous nos services sont conformes aux normes ERP et à la réglementation incendie.= nous proposons des services complets de sécurité incendie, la maintenance et l’installation de vos extincteurs, BAES, alarme type 4, desenfumage, RIA, plans de secours (intervention et évacuation), et la formation à l’utilisation des extincteurs. Tous nos services sont conformes au ERP et à la réglementation incendie. Tous nos services sont conformes aux normes ERP et à la réglementation incendie."
+      answer: "Tous nos services sont conformes aux normes ERP et à la réglementation incendie.= nous proposons des services complets de sécurité incendie, la maintenance et l'installation de vos extincteurs, BAES, alarme type 4, désenfumage, RIA, plans de secours (intervention et évacuation), et la formation à l'utilisation des extincteurs. Tous nos services sont conformes au ERP et à la réglementation incendie. Tous nos services sont conformes aux normes ERP et à la réglementation incendie."
     },
         {
       question: "Quelle est votre rapidité d'intervention en cas d'urgence ?",
@@ -22,11 +22,11 @@ export default function FAQ() {
     },
     {
       question: "À quelle fréquence les extincteurs doivent-ils être entretenus ?",
-      answer: "Les extincteurs doivent être entretenus annuellement par un ingénieur qualifié. De plus, ils nécessitent une vérification de service mensuelle (qui peut être faite en interne) et une service étendu tous les 5 ans. Nous proposons des contrats de maintenance pour garantir que vos extincteurs sont toujours conformes."
+      answer: "Les extincteurs doivent être entretenus annuellement par un ingénieur qualifié. De plus, ils nécessitent une vérification de service mensuelle (qui peut être faite en interne) et un service étendu tous les 5 ans. Nous proposons des contrats de maintenance pour garantir que vos extincteurs sont toujours conformes."
     },
     {
       question: "Proposez-vous des formations de sécurité incendie ?",
-      answer: "Oui nous proposeront une formation de sécurite incendie incluant la formation pratique sur les extincteurs et les procédures d'évacuations. La formation sera effectué sur place dans vos locaux."
+      answer: "Oui, nous proposons une formation de sécurité incendie incluant la formation pratique sur les extincteurs et les procédures d'évacuation. La formation sera effectuée sur place dans vos locaux."
     },
     {
       question: "Quelle maintenance est requise pour les systèmes d'alarme incendie ?",
@@ -61,7 +61,7 @@ export default function FAQ() {
     <section id="faq" className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 px-4">Questions Fréquemment Posées</h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Trouvez des réponses aux questions courantes sur nos services de protection incendie
           </p>

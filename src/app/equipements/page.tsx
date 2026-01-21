@@ -50,7 +50,7 @@ export default function EquipementsService() {
                     <ul className="text-gray-600 space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>Extincteurs portatif et sur roues</span>
+                        <span>Extincteurs portatifs et sur roues</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-purple-600 mr-3 mt-0.5 flex-shrink-0" />

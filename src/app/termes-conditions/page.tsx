@@ -168,7 +168,7 @@ export default function TermsConditions() {
               <div className="space-y-2">
                 <p className="text-gray-600"><strong>Email :</strong> contact@nova-ssi.fr</p>
                 <p className="text-gray-600"><strong>Téléphone :</strong> 06 07 11 78 38</p>
-                <p className="text-gray-600"><strong>Adresse :</strong> île de France, Paris</p>
+                <p className="text-gray-600"><strong>Adresse :</strong> Île-de-France, Paris</p>
                 <p className="text-gray-600"><strong>SIRET :</strong> XXX XXX XXX XXXXX</p>
               </div>
             </section>
