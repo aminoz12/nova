@@ -178,3 +178,5 @@ Pour copier facilement `GOOGLE_PRIVATE_KEY` depuis `.env.local` :
 
 **Une fois toutes les variables ajoutées et le projet redéployé, tout devrait fonctionner !** 🎉
 
+
+

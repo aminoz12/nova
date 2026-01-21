@@ -198,3 +198,5 @@ Vercel redéploie automatiquement à chaque push sur :
 
 **C'est tout ! Votre application est maintenant déployée sur Vercel.** 🎉
 
+
+

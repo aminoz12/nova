@@ -4,9 +4,8 @@ export default function Footer() {
   const footerLinks = {
     services: [
       { name: "Évaluation des Risques d'Incendie", href: "#" },
-      { name: "Installation et maintenance alarme type 4 d'Alarmes Incendie", href: "#" },
+      { name: "installation et maintenance d'alarme type 4", href: "#" },
       { name: "Plan de secours ( évacuation et intervention )", href: "/plans" },
-      { name: "Maintenance d'Alarmes Incendie", href: "#" },
       { name: "Extincteur et pièces détachées", href: "/extincteurs" },
       { name: "Éclairage de Secours (BAES)", href: "/baes" },
       { name: "Désenfumage", href: "/desenfumage" },

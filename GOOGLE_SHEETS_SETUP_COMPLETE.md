@@ -195,3 +195,5 @@ GOOGLE_SHEET_NAME=Sheet1
 
 **Une fois toutes ces étapes terminées, votre intégration Google Sheets sera complète !** 🎉
 
+
+
