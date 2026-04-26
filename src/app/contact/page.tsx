@@ -1,6 +1,7 @@
 'use client'
 
-import { Phone, Mail, MapPin, Clock, MessageCircle, Navigation, ExternalLink } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Navigation, ExternalLink } from 'lucide-react'
+import Image from 'next/image'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -103,12 +104,18 @@ export default function ContactPage() {
               >
                 <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 bg-green-500/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
                 <div className="relative">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                    <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                    <Image
+                      src="/whatsapp.png"
+                      alt="WhatsApp"
+                      width={64}
+                      height={64}
+                      className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+                    />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">WhatsApp</h3>
                   <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Contactez-nous directement</p>
-                  <p className="text-lg sm:text-xl font-bold text-green-600 break-all">+33 6 07 11 7838</p>
+                  <p className="text-lg sm:text-xl font-bold text-green-600 break-all">+33 6 07 11 78 38</p>
                   <div className="mt-3 sm:mt-4 flex items-center text-green-600 text-xs sm:text-sm font-semibold">
                     <span>Envoyer un message</span>
                     <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 ml-2" />
