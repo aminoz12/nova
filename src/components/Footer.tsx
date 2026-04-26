@@ -4,7 +4,7 @@ export default function Footer() {
   const footerLinks = {
     services: [
       { name: "Évaluation des Risques d'Incendie", href: "#" },
-      { name: "installation et maintenance d'alarme type 4", href: "#" },
+      { name: "Installation et maintenance d'alarme type 4", href: "#" },
       { name: "Plan de secours ( évacuation et intervention )", href: "/plans" },
       { name: "Extincteur et pièces détachées", href: "/extincteurs" },
       { name: "Éclairage de Secours (BAES)", href: "/baes" },
@@ -78,7 +78,7 @@ export default function Footer() {
               <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110" aria-label="LinkedIn">
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110" aria-label="Instagram">
+              <a href="https://instagram.com/ssi_nova" target="_blank" rel="noopener noreferrer" className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110" aria-label="Instagram">
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
